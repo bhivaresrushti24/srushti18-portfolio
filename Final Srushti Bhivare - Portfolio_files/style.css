@@ -1,0 +1,213 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #3b4f76;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #4c6a92;
+  overflow: hidden;
+  text-align: center; /* Center the navigation bar */
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 5px; /* Add some space between the links */
+}
+
+nav a:hover {
+  background-color: #36547b;
+  color: #f1f1f1;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2em;
+  color: #3b4f76;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #4c6a92;
+}
+
+/* Profile Photo */
+.profile-photo {
+  text-align: center; /* Center the profile photo */
+  margin: 20px 0;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  border: 4px solid #36547b;  /* Add border to profile photo */
+  width: 200px; /* You can adjust the size here if needed */
+}
+
+/* Certificate Grid */
+.certificate-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.certificate img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 250px;  /* Increased size for certificate images */
+  border: 2px solid #4c6a92;  /* Add border to certificate images */
+}
+
+/* Project Photos and Videos */
+.project img {
+  width: 100%;  /* Set the project image width to 100% of its container */
+  max-width: 600px;  /* Limit the width to 600px to avoid it becoming too large */
+  border-radius: 8px;
+  border: 2px solid #4c6a92;  /* Add border to project images */
+}
+
+.project video {
+  margin-top: 15px;
+  width: 80%;  /* Reduced video size */
+  max-width: 500px;  /* Limit video size to 500px */
+  border-radius: 8px;
+  border: 2px solid #4c6a92;  /* Add border to videos */
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px;
+  border: 2px solid #4c6a92;  /* Add border to gallery images */
+}
+
+/* Footer */
+footer {
+  background-color: #3b4f76;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+  background-color: #4c6a92;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #36547b;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4c6a92;
+  outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .certificate-grid,
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    text-align: left;
+  }
+
+  .project img,
+  .gallery img {
+    width: 100%;
+  }
+
+  .project video {
+    width: 100%;
+  }
+}
